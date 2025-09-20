@@ -64,10 +64,10 @@ public class OAuth2LoginSuccessHandler implements AuthenticationSuccessHandler {
             jwtCookie.setPath("/");
             jwtCookie.setMaxAge(86400);
             response.addCookie(jwtCookie);
-            response.sendRedirect("https://replate-e2ndvaahz-liviu5ms-projects.vercel.app/auth/google");
+            response.sendRedirect("replateapp.vercel.app/auth/google");
 
         }catch(Exception e) {
-            response.sendRedirect("https://replate-e2ndvaahz-liviu5ms-projects.vercel.app/auth/login?error=true");
+            response.sendRedirect("replateapp.vercel.app/auth/login?error=true");
         }
     }
 }
